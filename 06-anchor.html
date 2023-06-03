@@ -13,10 +13,15 @@
     data-likelion="">하이퍼 <span lang="en">link</span> 관련 속성
   </h1>
   <div title="마우스를 올리면 툴팁이 보여집니다.">
-    <a href="/" style="color:green">더보기</a>
+
+    <!-- 링크를 준다는 건 index.html을 여는것과 동일
+    a태그의 보안 noopener -->
+    <a href="http://www.naver.com/index.html" target="_blank" noopener style="color:green">더보기</a>
   </div>
 
   <div>
+    <!-- title, alt는 같이 사용하지 않음
+    title은 링크. alt는 이미지 설명으로 구분 -->
     <a href="/" title="다운로드">
       <img src="images/brochure.png" alt="카페 W 강좌 브로슈어" />
     </a>
