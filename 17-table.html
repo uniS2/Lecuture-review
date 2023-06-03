@@ -44,18 +44,23 @@
   </table>
 
   <p id="tableDesc">
-    프론트엔드 관련 기술 시험 결과를 나타낸 표 입니다.
+    프론트엔드 관련 기술 시험 결과를 나타낸 표로 프론트엔드 과목은 HTML, CSS, Javascript로 구성되어 있다.
   </p>
 
+  <!-- summary 대신 aria-describedby 이용하여 정보 나타낼 수 있음 -->
   <table border="1" summary="표의 요약 정보" aria-describedby="tableDesc">
+    <caption>프론트엔드 관련 기술 시험 결과</caption>
     <tr>
       <th>과목명</th>
+      <!-- unique한 데이터를 가지게
+      마켓컬리 게시판-공지사항 -->
       <th id="html">HTML/CSS</th>
       <th id="js">Javascript</th>
       <th id="react">React</th>
     </tr>
     <tr>
       <th id="ma01">김미리</th>
+      <!-- 원하는 제목 셀을 나열 -->
       <td headers="html ma01">100</td>
       <td headers="js ma01">95</td>
       <td headers="react ma01">98</td>
