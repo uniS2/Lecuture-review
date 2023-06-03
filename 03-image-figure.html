@@ -10,14 +10,23 @@
 
 <body>
   <h1>
-    <img src="./images/webcafe-logo.png" alt="web cafe" />
+    <img src="./images/webcafe-logo.png" alt="웹카페" />
   </h1>
 
   <figure>
-    <img src="./images/likelion-black.png" alt="" />
+    <!-- alt는 공란을 두어도 있어야
+    의미 없는 이미지일 경우 공란. 
+    width와 height 있으면 성능에 도움 -->
+    <!-- reflow repaint 찾아보기 - youtube. https://youtu.be/ZTnIxIA5KGw 위치 계산 -->
+    <!-- 정보가 없는것보다 중복이 나음!
+    alt는 가급적 꼭 써주기 -->
+    <img src="./images/likelion-black.png" alt="Like Lion" width="" height=""/>
     <figcaption>Like Lion</figcaption>
   </figure>
 
+  <!-- figure는 이미지 외에도 video 등 정보 포함 가능
+      하나의 독립적인 콘텐츠=컴포넌트처럼 동작! 시맨틱!
+      Daum 페이지 찾아보기 -->
   <figure>
     <img src="images/rwd.jpg" alt="" />
     <figcaption>
