@@ -10,15 +10,26 @@
 
 <body>
 
+  <!-- 원하는 이미지 주입 -->
   <picture>
     <source media="(min-width: 650px)"
       srcset="https://googlechrome.github.io/samples/picture-element/images/kitten-large.png">
     <source media="(min-width: 465px)"
       srcset="https://googlechrome.github.io/samples/picture-element/images/kitten-medium.png">
     <!-- img tag for browsers that do not support picture element -->
+
+    <!-- 465 미만 지원하는 브라우저의 경우 -->
     <img
       src="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png"
       alt="a cute kitten">
+  </picture>
+
+
+  <!-- srcset으로 이미지 설정 가능
+  crl+shift+m 설정: 캐시 비우면 잘 바꺄여 ~ -->
+  <picture>
+    <img src="./images/image-src.png" alt=""
+    srcset="./images/image-1x.png 1x, ./images/image-2x.png 2x, ./images/image-3x.png 3x, ./images/image-4x.png 4x "/>
   </picture>
 </body>
 
